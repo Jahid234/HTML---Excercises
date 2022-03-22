@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html - Classes</title>
+</head>
+    <!--Class of CSS-->
+    <style>
+        .city1{
+            background-color: brown;
+            color: aliceblue;
+            border: 2px solid greenyellow;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+
+    <style>
+        .city2{
+            background-color: green;
+            color: black;
+            border: 2px solid white;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+
+    <style>
+        .city3{
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+
+    <style>
+        .note{
+            font-size: 120%;
+            color: aqua;
+        }
+    </style>
+
+    
+<body>
+   <div class="city1"> 
+       <h2>Dhaka</h2>
+       <p>This is a capital of Bangladesh</p>       
+   </div>
+
+   <div class="city2"> 
+        <h2>Sylhet</h2>
+        <p>This is a beautiful city in Bangladesh</p>       
+    </div>
+
+    <div class="city3">
+        <h2>Chattogram</h2>
+        <p>This is a commercial capital of Bangladesh</p>
+    </div>
+
+    <!--Multiple classes-->
+
+    <h2 class="city1">This is dhaka classes</h2>
+    <h2 class="city2">This is sylhet classes</h2>
+    <h2 class="city3">This is Chattogram Classes</h2>
+
+    <!--Note classes-->
+
+    <h2> My <span class="note"> Important </span> diccussion</h2>
+    <p> It is <span class="note"> very helpful</span> for u</p>
+
+    <!--JavaScript Classes-->
+    
+    <button onclick="myFunction()">Hide elements</button>
+
+    <h2 class="city">Dhaka</h2>
+    <p>Dhaka is the capital of Bangladesh.</p>
+
+    <h2 class="city">Sylhet</h2>
+    <p>Sylhet is also called London.</p>
+
+    <h2 class="city">Chattogram</h2>
+    <p>Chattogram is also nice city.</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+        }       
+    </script>
+
+</body>
+</html>
