@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html - tables</title>
+</head>
+
+<!--You should study
+---Tables header
+---Tables sizes
+---Tbales Border
+---Tables styles
+---Padding & Spacing
+---Colspan & rowspan
+-->
+
+
+<!--Table , header and data style-->
+<style>
+    table, th , td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        background-color: blue;
+    }
+
+    th, td{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    table{
+        border-spacing: 30px;
+    }
+
+    tr{
+        border-bottom: white;
+    }
+
+    tr:hover {
+        background-color: red;
+    }
+</style>
+<body>
+    <p>This is <b> <i>Html table</i> </b> content</p>
+    <table style="Width: 300px" height="300px">
+        <caption>Food Table</caption>
+        
+        <tr style="color: black">
+
+            <!--colspan = many column declares 1 colspan-->
+
+            <th colspan="2">Breakfast Item</th>
+
+            <!--Rowspan-->
+
+            <th rowspan="2">Lunch Item</th>
+
+            <th>Dinner Item</th>
+        </tr>
+
+        <tr>
+            <td> <li>Snakes</li>
+                <li>Burger</li>
+                <li>Tea</li> 
+            </td>
+            <td><li>Murog-polao</li>
+                <li>Biriyani</li>
+                <li>Kichuri</li>
+                <li>Tehari</li>
+            </td>               
+            <td><li>Chinese Food</li>
+                <li>Thai food</li>
+                <li>Bengali food</li>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
